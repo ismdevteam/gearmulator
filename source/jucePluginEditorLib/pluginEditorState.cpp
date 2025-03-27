@@ -316,6 +316,11 @@ void PluginEditorState::openMenu(const juce::MouseEvent* _event)
 	latencyMenu.addItem("8", true, latency == 8, [this, adjustLatency] { adjustLatency(8); });
 	latencyMenu.addItem("16", true, latency == 16, [this, adjustLatency] { adjustLatency(16); });
 	latencyMenu.addItem("32", true, latency == 32, [this, adjustLatency] { adjustLatency(32); });
+	latencyMenu.addItem("64", true, latency == 64, [this, adjustLatency] { adjustLatency(64); });
+	latencyMenu.addItem("128", true, latency == 128, [this, adjustLatency] { adjustLatency(128); });
+	latencyMenu.addItem("256", true, latency == 256, [this, adjustLatency] { adjustLatency(256); });
+	latencyMenu.addItem("512", true, latency == 512, [this, adjustLatency] { adjustLatency(512); });
+	latencyMenu.addItem("ismdevteam Slowpoke 1024", true, latency == 1024, [this, adjustLatency] { adjustLatency(1024); });
 
 	auto servers = m_remoteServerList.getEntries();
 
