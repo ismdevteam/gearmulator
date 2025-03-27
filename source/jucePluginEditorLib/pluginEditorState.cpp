@@ -314,8 +314,8 @@ void PluginEditorState::openMenu(const juce::MouseEvent* _event)
 	latencyMenu.addItem("2", true, latency == 2, [this, adjustLatency] { adjustLatency(2); });
 	latencyMenu.addItem("4", true, latency == 4, [this, adjustLatency] { adjustLatency(4); });
 	latencyMenu.addItem("8", true, latency == 8, [this, adjustLatency] { adjustLatency(8); });
-	latencyMenu.addItem("8", true, latency == 16, [this, adjustLatency] { adjustLatency(16); });
-	latencyMenu.addItem("8", true, latency == 32, [this, adjustLatency] { adjustLatency(32); });
+	latencyMenu.addItem("16", true, latency == 16, [this, adjustLatency] { adjustLatency(16); });
+	latencyMenu.addItem("32", true, latency == 32, [this, adjustLatency] { adjustLatency(32); });
 
 	auto servers = m_remoteServerList.getEntries();
 
